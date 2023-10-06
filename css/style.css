@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.name {
+  padding: 3em;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+.name .name-content {
+  max-width: fit-content;
+  font-size: 3em;
+  position: relative;
+  display: block;
+  color: #5f5959;
+  text-transform: uppercase;
+}
+.name .icon {
+  width: 30px;
+  height: 30px;
+}
+.name .icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 1em;
+}
+.name .icons li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+.name .icons li span {
+  font-family: "Nunito", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
