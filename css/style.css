@@ -16,20 +16,19 @@ li {
 a {
   text-decoration: none;
   display: inline-block;
+  color: #fff;
 }
 
 .name {
-  padding: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #b8b7af;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
+  padding: 2em 0em;
+  background-color: #303030;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.8);
 }
 .name .name-info {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .name .name-info .name-content {
   max-width: fit-content;
@@ -41,14 +40,14 @@ a {
 }
 .name .name-info .job {
   letter-spacing: 1ch;
-  margin-top: 0.65em;
+  margin: 0.65em 0em;
   font-weight: 400;
-  color: #5e5e5e;
+  color: #bbbaba;
   text-transform: uppercase;
 }
 .name .icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 .name .icons {
   display: flex;
@@ -61,10 +60,132 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2em;
 }
 .name .icons li span {
   font-family: "Nunito", sans-serif;
+}
+
+.info {
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: -2em;
+  border-top: 1px solid rgba(255, 255, 255, 0.5803921569);
+  width: 100%;
+  color: #fff;
+}
+.info .contact-list {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.info .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.dados-pessoais .dados {
+  max-width: 1300px;
+  margin: 2em auto;
+}
+.dados-pessoais .dados .inner-data {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.05em;
+}
+.dados-pessoais .dados .adjust {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  max-width: 1300px;
+  margin: 4em auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.perfil .dados {
+  margin-bottom: 2em;
+}
+.perfil .dados h2 {
+  margin-bottom: 1em;
+  font-family: "Nunito", sans-serif;
+}
+.perfil .dados h2::before {
+  content: url(../assets/user.svg);
+  padding-right: 1em;
+}
+.perfil .dados span {
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+.perfil .experiencia {
+  margin-bottom: 2em;
+}
+.perfil .experiencia h2 {
+  margin-bottom: 1em;
+  font-family: "Nunito", sans-serif;
+}
+.perfil .experiencia h2::before {
+  content: url(../assets/experiencia.svg);
+  padding-right: 1em;
+}
+.perfil .experiencia span {
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.role {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tempo {
+  font-weight: 200;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.paragrafo {
+  margin-top: 0.5em;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.formacao {
+  margin-bottom: 2em;
+}
+.formacao .escola {
+  font-weight: bold;
+  font-size: 17px;
+}
+.formacao .periodo {
+  font-size: 15px;
+  color: #5c5c5c;
+}
+.formacao h2 {
+  margin-bottom: 1em;
+  font-family: "Nunito", sans-serif;
+}
+.formacao h2::before {
+  content: url(../assets/formacao.svg);
+  padding-right: 1em;
+}
+.formacao span {
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.competencias h2 {
+  margin-bottom: 1em;
+  font-family: "Nunito", sans-serif;
+}
+.competencias h2::before {
+  content: url(../assets/code.svg);
+  padding-right: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

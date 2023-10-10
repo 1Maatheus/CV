@@ -1,0 +1,104 @@
+.dados-pessoais {
+  .dados {
+    max-width: 1300px;
+    margin: 2em auto;
+    .inner-data {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 1.05em;
+    }
+    .adjust {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.perfil {
+  max-width: 1300px;
+  margin: 4em auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  .dados {
+    margin-bottom: 2em;
+    h2 {
+      margin-bottom: 1em;
+
+      @include font-h2();
+      &::before {
+        content: url(../assets/user.svg);
+        padding-right: 1em;
+      }
+    }
+    span {
+      @include font-span();
+    }
+  }
+
+  .experiencia {
+    margin-bottom: 2em;
+    h2 {
+      margin-bottom: 1em;
+      @include font-h2();
+      &::before {
+        content: url(../assets/experiencia.svg);
+        padding-right: 1em;
+      }
+    }
+    span {
+      @include font-span();
+    }
+  }
+}
+
+.role {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tempo {
+  font-weight: 200;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.paragrafo {
+  margin-top: 0.5em;
+  @include font-span();
+}
+
+.formacao {
+  margin-bottom: 2em;
+  .escola {
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .periodo {
+    font-size: 15px;
+    color: #5c5c5c;
+  }
+  h2 {
+    margin-bottom: 1em;
+    @include font-h2();
+    &::before {
+      content: url(../assets/formacao.svg);
+      padding-right: 1em;
+    }
+  }
+  span {
+    @include font-span();
+  }
+}
+
+.competencias {
+  h2 {
+    margin-bottom: 1em;
+    @include font-h2();
+    &::before {
+      content: url(../assets/code.svg);
+      padding-right: 1em;
+    }
+  }
+}

@@ -17,4 +17,20 @@ li {
 a {
   text-decoration: none;
   display: inline-block;
+  color: #fff;
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-span() {
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+@mixin font-h2() {
+  font-family: "Nunito", sans-serif;
 }
