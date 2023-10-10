@@ -1,27 +1,10 @@
-.dados-pessoais {
-  .dados {
-    max-width: 1300px;
-    margin: 2em auto;
-    .inner-data {
-      margin-top: 1em;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-size: 1.05em;
-    }
-    .adjust {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-}
-
 .perfil {
+  padding: 1em 0em;
   max-width: 1300px;
   margin: 4em auto;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
   .dados {
+    padding: 1em 0em;
+    border-bottom: 1px solid #d0d0d3;
     margin-bottom: 2em;
     h2 {
       margin-bottom: 1em;
@@ -38,6 +21,8 @@
   }
 
   .experiencia {
+    padding: 1em 0em;
+    border-bottom: 1px solid #d0d0d3;
     margin-bottom: 2em;
     h2 {
       margin-bottom: 1em;
@@ -70,10 +55,13 @@
 }
 
 .formacao {
+  padding: 1em 0em;
+  border-bottom: 1px solid #d0d0d3;
   margin-bottom: 2em;
   .escola {
     font-weight: bold;
     font-size: 17px;
+    margin-top: 1em;
   }
   .periodo {
     font-size: 15px;
@@ -92,7 +80,29 @@
   }
 }
 
+.cursos {
+  padding: 1em 0em;
+  border-bottom: 1px solid #d0d0d3;
+  margin-bottom: 2em;
+  h2 {
+    @include font-h2();
+    &::before {
+      content: url(../assets/book.svg);
+      padding-right: 1em;
+    }
+  }
+  span {
+    font-weight: bold;
+  }
+  .cursos-item {
+    margin-top: 1.5em;
+  }
+}
+
 .competencias {
+  padding: 1em 0em;
+  border-bottom: 1px solid #d0d0d3;
+  margin-bottom: 2em;
   h2 {
     margin-bottom: 1em;
     @include font-h2();
@@ -101,4 +111,108 @@
       padding-right: 1em;
     }
   }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .left-skills {
+  }
+  .skills-item {
+    padding: 1em 0em;
+    display: flex;
+    align-items: center;
+  }
+
+  .js {
+    &::after {
+      content: url(../assets/js.svg);
+      padding-left: 1em;
+    }
+  }
+
+  .ts {
+    &::after {
+      content: url(../assets/typescript.svg);
+      padding-left: 1em;
+    }
+  }
+
+  .angular {
+    &::after {
+      content: url(../assets/angular.svg);
+      padding-left: 1em;
+    }
+  }
+
+  .git {
+    &::after {
+      content: url(../assets/git.svg);
+      padding-left: 1em;
+    }
+  }
+
+  .html5 {
+    &::after {
+      content: url(../assets/html.svg);
+      padding-left: 1em;
+    }
+  }
+
+  .css {
+    &::after {
+      content: url(../assets/css3.svg);
+      padding-left: 1em;
+    }
+  }
+
+  .sass {
+    &::after {
+      content: url(../assets/sass.svg);
+      padding-left: 1em;
+    }
+  }
+
+  .bootstrap {
+    &::after {
+      content: url(../assets/bootstrap.svg);
+      padding-left: 1em;
+    }
+  }
+}
+
+.links {
+  padding: 1em 0em;
+  border-bottom: 1px solid #d0d0d3;
+  margin-bottom: 2em;
+  h2 {
+    margin-bottom: 1em;
+    @include font-h2();
+    &::before {
+      content: url(../assets/link.svg);
+      padding-right: 1em;
+    }
+  }
+}
+
+.icon-link {
+  width: 30px;
+  height: 30px;
+}
+
+.link-text {
+  color: #222;
+}
+
+.link-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.link-item > a {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  align-items: center;
 }
