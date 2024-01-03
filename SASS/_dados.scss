@@ -116,12 +116,24 @@
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  .left-skills {
-  }
   .skills-item {
     padding: 1em 0em;
     display: flex;
     align-items: center;
+  }
+
+  .next {
+    &::after {
+      content: url(../assets/nextjs.svg);
+      padding-left: 1em;
+    }
+  }
+
+  .tailwind {
+    &::after {
+      content: url(../assets/tailwind.svg);
+      padding-left: 1em;
+    }
   }
 
   .js {
