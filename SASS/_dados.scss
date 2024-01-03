@@ -158,6 +158,7 @@
   }
 
   .git {
+    margin-bottom: 1em;
     &::after {
       content: url(../assets/git.svg);
       padding-left: 1em;

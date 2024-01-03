@@ -231,6 +231,9 @@ a {
   content: url(../assets/angular.svg);
   padding-left: 1em;
 }
+.skills .git {
+  margin-bottom: 1em;
+}
 .skills .git::after {
   content: url(../assets/git.svg);
   padding-left: 1em;
